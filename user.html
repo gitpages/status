@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="de">
+   <head>
+      <meta charset="utf-8">
+      <title>Benutzerüberprüfung</title>
+      <script src="check.js" defer></script>
+   </head>
+   <body>
+      <form method="POST" action="usernamecheck.php">
+         <label for="username">Benutzername</label>
+         <input id="username" name="username" pattern="^[a-z0-9]{4,20}$"> 
+         <p>Der Benutzername muss aus kleinen Buchstaben(a-z) oder Ziffern(0-9) bestehen 
+            und 4-20 Zeichen lang sein"</p>
+         <button>Prüfe</button>
+      </form>
+   </body>
+</html>
